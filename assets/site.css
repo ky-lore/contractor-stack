@@ -471,3 +471,17 @@ h1,h2,h3,h4{font-weight:700;letter-spacing:-.03em;line-height:1.05}
 .info-step p b{color:var(--text);font-weight:600;display:block}
 .info-contact a{display:flex;align-items:center;gap:11px;padding:.5em 0;font-weight:500;color:var(--text)}
 .info-contact a svg{width:18px;height:18px;color:var(--blue)}
+
+/* hero comet traces */
+.hero-traces{position:absolute;inset:0;z-index:1;width:100%;height:100%;pointer-events:none}
+.hero-traces .tline{fill:none;stroke:url(#trace-grad);stroke-width:1.4;opacity:.55}
+@media(prefers-reduced-motion:reduce){.hero-traces .comet{display:none}}
+
+/* featured hero logo lockup */
+.hero-logo{display:inline-flex;flex-direction:column;align-items:center;gap:14px;margin-bottom:22px}
+.hero-logo .hl-gear{width:66px;height:auto;filter:drop-shadow(0 12px 22px rgba(24,100,242,.3));transition:transform .5s var(--ease)}
+.hero-logo:hover .hl-gear{transform:rotate(30deg)}
+.hero-logo .hl-word{width:220px;height:auto}
+@media(max-width:600px){.hero-logo .hl-gear{width:56px}.hero-logo .hl-word{width:186px}}
+
+.hero-tag{font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-2);margin-bottom:22px}
